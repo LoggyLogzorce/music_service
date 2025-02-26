@@ -1,0 +1,50 @@
+/* Добавляем в существующие стили */
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex-shrink: 0;
+    background: #000;
+    padding: 50px;
+    margin-top: auto; /* Дублирующее свойство для надёжности */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex: 1;
+    margin-right: 30px;
+}
+
+.footer-column h4 {
+    margin-bottom: 15px;
+    color: var(--light-gray);
+}
+
+.footer-column a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer-column a:hover {
+    color: var(--primary-color);
+}

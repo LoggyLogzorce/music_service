@@ -1,0 +1,47 @@
+server:
+  port: "8080"
+  timeout: 10
+
+handlers:
+  LoginPage:
+    method: "GET"
+    url: "login"
+  RegisterPage:
+    method: "GET"
+    url: "register"
+  HomePage:
+    method: "GET"
+    url: ""
+  ChartsPage:
+    method: "GET"
+    url: "charts"
+  MyCollectionPage:
+    method: "GET"
+    url: "my-collection"
+  Podcasts:
+    method: "GET"
+    url: "podcasts"
+
+  AboutPage:
+    method: "GET"
+    url: "about"
+  VacanciesPage:
+    method: "GET"
+    url: "vacancies"
+  PressPage:
+    method: "GET"
+    url: "press"
+
+  ContactPage:
+    method: "GET"
+    url: "contact"
+  ReferencePage:
+    method: "GET"
+    url: "reference"
+
+  TermsOfUsePage:
+    method: "GET"
+    url: "terms-of-use"
+  ConfidentialityPage:
+    method: "GET"
+    url: "confidentiality"

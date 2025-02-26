@@ -1,0 +1,76 @@
+:root {
+    --primary-color: #1db954;
+    --dark-bg: #121212;
+    --light-gray: #b3b3b3;
+    --card-bg: #181818;
+}
+
+/* Новые стили для страницы */
+.library-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.library-tabs {
+    display: flex;
+    gap: 20px;
+}
+
+.library-tab {
+    background: none;
+    border: none;
+    color: white;
+    padding: 10px 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.library-tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--primary-color);
+}
+
+.liked-songs-banner {
+    background: linear-gradient(45deg, #2d5b7c, #1db954);
+    padding: 25px;
+    border-radius: 10px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.playlist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.recently-played {
+    display: grid;
+    gap: 15px;
+}
+
+.artist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.artist-card {
+    text-align: center;
+}
+
+.artist-avatar {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}

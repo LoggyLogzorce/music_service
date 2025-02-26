@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicFlow | Подкасты</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="/static/css/podcasts.css">
+    <link rel="stylesheet" href="/static/css/footer.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <i class="fas fa-music"></i>
+        MusicFlow
+    </div>
+    <nav>
+        <a href="/">Главная</a>
+        <a href="/podcasts" class="active">Подкасты</a>
+        <a href="/charts">Чарты</a>
+        <a href="/my-collection">Моя коллекция</a>
+    </nav>
+    <div class="auth-buttons">
+        <button onclick="location.href='/login'">Войти</button>
+        <button onclick="location.href='/register'">Зарегистрироваться</button>
+    </div>
+</header>
+
+<main>
+    <div class="search-bar">
+        <label>
+            <input type="text" placeholder="Найти подкаст...">
+        </label>
+        <i class="fas fa-search"></i>
+    </div>
+
+    <!-- Герой-секция -->
+    <div class="podcast-hero">
+        <img src="https://picsum.photos/200" alt="Подкаст дня">
+        <div class="podcast-hero-info">
+            <h1 class="podcast-hero-title">Подкаст дня</h1>
+            <div class="podcast-hero-author">Автор подкаста</div>
+            <div class="podcast-hero-stats">
+                <span><i class="fas fa-headphones"></i> 250K+ прослушиваний</span>
+                <span><i class="fas fa-microphone"></i> 150 эпизодов</span>
+                <span><i class="fas fa-star"></i> 4.8/5</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Категории -->
+    <h2 class="section-title">Категории</h2>
+    <div class="podcast-categories">
+        <div class="category-card">
+            <i class="fas fa-chart-line category-icon"></i>
+            <h3>Бизнес</h3>
+        </div>
+        <div class="category-card">
+            <i class="fas fa-brain category-icon"></i>
+            <h3>Психология</h3>
+        </div>
+        <div class="category-card">
+            <i class="fas fa-laptop-code category-icon"></i>
+            <h3>Технологии</h3>
+        </div>
+        <div class="category-card">
+            <i class="fas fa-heart category-icon"></i>
+            <h3>Отношения</h3>
+        </div>
+        <!-- Новые категории -->
+        <div class="category-card">
+            <i class="fas fa-graduation-cap category-icon"></i>
+            <h3>Образование</h3>
+        </div>
+        <div class="category-card">
+            <i class="fas fa-heartbeat category-icon"></i>
+            <h3>Здоровье</h3>
+        </div>
+        <div class="category-card">
+            <i class="fas fa-globe-europe category-icon"></i>
+            <h3>Путешествия</h3>
+        </div>
+        <div class="category-card">
+            <i class="fas fa-microphone-alt category-icon"></i>
+            <h3>Интервью</h3>
+        </div>
+        <div class="category-card">
+            <i class="fas fa-dumbbell category-icon"></i>
+            <h3>Спорт</h3>
+        </div>
+        <div class="category-card">
+            <i class="fas fa-comment-dots category-icon"></i>
+            <h3>Юмор</h3>
+        </div>
+        <div class="category-card">
+            <i class="fas fa-history category-icon"></i>
+            <h3>История</h3>
+        </div>
+    </div>
+
+    <!-- Популярные эпизоды -->
+    <h2 class="section-title">Популярные эпизоды</h2>
+    <div class="episode-list">
+        <div class="episode-card">
+            <img src="https://picsum.photos/80" class="episode-cover" alt="Эпизод">
+            <div class="episode-info">
+                <div class="episode-title">Как достичь успеха за 30 дней</div>
+                <div class="episode-meta">
+                    <span>Подкаст: Бизнес с нуля</span>
+                    <span>Длительность: 45 мин</span>
+                    <span>Дата: 12.05.2024</span>
+                </div>
+            </div>
+        </div>
+        <div class="episode-card">
+            <img src="https://picsum.photos/80" class="episode-cover" alt="Эпизод">
+            <div class="episode-info">
+                <div class="episode-title">Как достичь успеха за 30 дней</div>
+                <div class="episode-meta">
+                    <span>Подкаст: Бизнес с нуля</span>
+                    <span>Длительность: 45 мин</span>
+                    <span>Дата: 12.05.2024</span>
+                </div>
+            </div>
+        </div>
+        <div class="episode-card">
+            <img src="https://picsum.photos/80" class="episode-cover" alt="Эпизод">
+            <div class="episode-info">
+                <div class="episode-title">Как достичь успеха за 30 дней</div>
+                <div class="episode-meta">
+                    <span>Подкаст: Бизнес с нуля</span>
+                    <span>Длительность: 45 мин</span>
+                    <span>Дата: 12.05.2024</span>
+                </div>
+            </div>
+        </div>
+        <div class="episode-card">
+            <img src="https://picsum.photos/80" class="episode-cover" alt="Эпизод">
+            <div class="episode-info">
+                <div class="episode-title">Как достичь успеха за 30 дней</div>
+                <div class="episode-meta">
+                    <span>Подкаст: Бизнес с нуля</span>
+                    <span>Длительность: 45 мин</span>
+                    <span>Дата: 12.05.2024</span>
+                </div>
+            </div>
+        </div>
+        <div class="episode-card">
+            <img src="https://picsum.photos/80" class="episode-cover" alt="Эпизод">
+            <div class="episode-info">
+                <div class="episode-title">Как достичь успеха за 30 дней</div>
+                <div class="episode-meta">
+                    <span>Подкаст: Бизнес с нуля</span>
+                    <span>Длительность: 45 мин</span>
+                    <span>Дата: 12.05.2024</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Рекомендуемые подкасты -->
+    <h2 class="section-title">Рекомендуем послушать</h2>
+    <div class="albums-grid">
+        <div class="album-card">
+            <img src="https://picsum.photos/200" alt="Подкаст" class="album-cover">
+            <h3>Технологии будущего</h3>
+            <p>Еженедельные выпуски</p>
+        </div>
+        <div class="album-card">
+            <img src="https://picsum.photos/200" alt="Подкаст" class="album-cover">
+            <h3>Технологии будущего</h3>
+            <p>Еженедельные выпуски</p>
+        </div>
+        <div class="album-card">
+            <img src="https://picsum.photos/200" alt="Подкаст" class="album-cover">
+            <h3>Технологии будущего</h3>
+            <p>Еженедельные выпуски</p>
+        </div>
+        <div class="album-card">
+            <img src="https://picsum.photos/200" alt="Подкаст" class="album-cover">
+            <h3>Технологии будущего</h3>
+            <p>Еженедельные выпуски</p>
+        </div>
+        <div class="album-card">
+            <img src="https://picsum.photos/200" alt="Подкаст" class="album-cover">
+            <h3>Технологии будущего</h3>
+            <p>Еженедельные выпуски</p>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-column">
+            <h4>MusicFlow</h4>
+            <a href="/about">О нас</a>
+            <a href="/vacancies">Вакансии</a>
+            <a href="/press">Для прессы</a>
+        </div>
+        <div class="footer-column">
+            <h4>Поддержка</h4>
+            <a href="/reference">Справка</a>
+            <a href="/contact">Контакты</a>
+        </div>
+        <div class="footer-column">
+            <h4>Правовая информация</h4>
+            <a href="/terms-of-use">Условия использования</a>
+            <a href="/confidentiality">Конфиденциальность</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Добавляем функционал воспроизведения
+    document.querySelectorAll('.play-button').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const icon = this.querySelector('i');
+            icon.classList.toggle('fa-play');
+            icon.classList.toggle('fa-pause');
+        });
+    });
+</script>
+</body>
+</html>

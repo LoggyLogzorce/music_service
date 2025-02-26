@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicFlow | Моя музыка</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="/static/css/my_collection.css">
+    <link rel="stylesheet" href="/static/css/footer.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <i class="fas fa-music"></i>
+        MusicFlow
+    </div>
+    <nav>
+        <a href="/">Главная</a>
+        <a href="/podcasts">Подкасты</a>
+        <a href="/charts">Чарты</a>
+        <a href="/my-collection" class="active">Моя коллекция</a>
+    </nav>
+    <div class="auth-buttons">
+        <button onclick="location.href='/login'">Войти</button>
+        <button onclick="location.href='/register'">Зарегистрироваться</button>
+    </div>
+</header>
+
+<main>
+    <div class="search-bar">
+        <label>
+            <input type="text" placeholder="Найти треки, альбомы, подкасты в вашей коллекции...">
+        </label>
+        <i class="fas fa-search"></i>
+    </div>
+
+    <div class="library-header">
+        <h1>Моя колекция</h1>
+
+    </div>
+
+    <div class="liked-songs-banner">
+        <div>
+            <h2>Понравившиеся треки</h2>
+            <p>23 трека • 1 ч 45 мин</p>
+        </div>
+    </div>
+
+    <h3 class="section-title">Мои плейлисты</h3>
+    <div class="playlist-grid">
+        <div class="album-card">
+            <img src="https://picsum.photos/200" class="album-cover">
+            <h3>Для тренировки</h3>
+            <p>15 треков</p>
+        </div>
+        <div class="album-card">
+            <img src="https://picsum.photos/200" class="album-cover">
+            <h3>Ретро хиты</h3>
+            <p>24 трека</p>
+        </div>
+        <!-- Добавить ещё плейлисты -->
+    </div>
+
+    <h3 class="section-title">Исполнители</h3>
+    <div class="artist-grid">
+        <div class="artist-card">
+            <img src="https://picsum.photos/150" class="artist-avatar">
+            <h4>Queen</h4>
+            <p>Исполнитель</p>
+        </div>
+        <div class="artist-card">
+            <img src="https://picsum.photos/150" class="artist-avatar">
+            <h4>Queen</h4>
+            <p>Исполнитель</p>
+        </div>
+        <div class="artist-card">
+            <img src="https://picsum.photos/150" class="artist-avatar">
+            <h4>Queen</h4>
+            <p>Исполнитель</p>
+        </div>
+        <div class="artist-card">
+            <img src="https://picsum.photos/150" class="artist-avatar">
+            <h4>Queen</h4>
+            <p>Исполнитель</p>
+        </div>
+    </div>
+
+    <h2 class="section-title">Подкасты</h2>
+    <div class="albums-grid">
+        <div class="album-card">
+            <img src="https://picsum.photos/200" alt="Подкаст" class="album-cover">
+            <h3>Технологии будущего</h3>
+            <p>Еженедельные выпуски</p>
+        </div>
+        <div class="album-card">
+            <img src="https://picsum.photos/200" alt="Подкаст" class="album-cover">
+            <h3>Технологии будущего</h3>
+            <p>Еженедельные выпуски</p>
+        </div>
+        <div class="album-card">
+            <img src="https://picsum.photos/200" alt="Подкаст" class="album-cover">
+            <h3>Технологии будущего</h3>
+            <p>Еженедельные выпуски</p>
+        </div>
+        <div class="album-card">
+            <img src="https://picsum.photos/200" alt="Подкаст" class="album-cover">
+            <h3>Технологии будущего</h3>
+            <p>Еженедельные выпуски</p>
+        </div>
+        <div class="album-card">
+            <img src="https://picsum.photos/200" alt="Подкаст" class="album-cover">
+            <h3>Технологии будущего</h3>
+            <p>Еженедельные выпуски</p>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-column">
+            <h4>MusicFlow</h4>
+            <a href="/about">О нас</a>
+            <a href="/vacancies">Вакансии</a>
+            <a href="/press">Для прессы</a>
+        </div>
+        <div class="footer-column">
+            <h4>Поддержка</h4>
+            <a href="/reference">Справка</a>
+            <a href="/contact">Контакты</a>
+        </div>
+        <div class="footer-column">
+            <h4>Правовая информация</h4>
+            <a href="/terms-of-use">Условия использования</a>
+            <a href="/confidentiality">Конфиденциальность</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Переключение табов
+    document.querySelectorAll('.library-tab').forEach(tab => {
+        tab.addEventListener('click', function() {
+            document.querySelectorAll('.library-tab').forEach(t => t.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
+
+    // Управление воспроизведением
+    document.querySelectorAll('.play-button').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const icon = this.querySelector('i');
+            icon.classList.toggle('fa-play');
+            icon.classList.toggle('fa-pause');
+        });
+    });
+</script>
+</body>
+</html>

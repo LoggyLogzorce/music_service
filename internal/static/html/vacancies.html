@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicFlow | Вакансии</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="/static/css/vacancies.css">
+    <link rel="stylesheet" href="/static/css/login.css">
+    <link rel="stylesheet" href="/static/css/footer.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <i class="fas fa-music"></i>
+        MusicFlow
+    </div>
+    <nav>
+        <a href="/">Главная</a>
+        <a href="/podcasts">Подкасты</a>
+        <a href="/charts">Чарты</a>
+        <a href="/my-collection">Моя коллекция</a>
+    </nav>
+    <div class="auth-buttons">
+        <button onclick="location.href='/login'">Войти</button>
+        <button onclick="location.href='/register'">Зарегистрироваться</button>
+    </div>
+</header>
+
+<main>
+    <h1 class="section-title">Карьера в MusicFlow</h1>
+
+    <div class="vacancies-container">
+        <div class="job-filters">
+            <button class="filter-btn active">Все</button>
+            <button class="filter-btn">Разработка</button>
+            <button class="filter-btn">Дизайн</button>
+            <button class="filter-btn">Маркетинг</button>
+            <button class="filter-btn">Поддержка</button>
+        </div>
+
+        <div class="jobs-grid">
+            <div class="job-card">
+                <h3>Frontend Developer</h3>
+                <div class="job-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Москва</span>
+                    <span><i class="fas fa-briefcase"></i> Опыт от 3 лет</span>
+                </div>
+                <p>Разработка пользовательских интерфейсов для музыкальной платформы...</p>
+                <div class="job-type">Удалённо</div>
+                <button class="auth-button" style="margin-top: 15px;">Подробнее</button>
+            </div>
+            <div class="job-card">
+                <h3>Backend Developer</h3>
+                <div class="job-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Москва</span>
+                    <span><i class="fas fa-briefcase"></i> Опыт от 3 лет</span>
+                </div>
+                <p>Разработка микросервисов для музыкальной платформы...</p>
+                <div class="job-type">Удалённо</div>
+                <button class="auth-button" style="margin-top: 15px;">Подробнее</button>
+            </div>
+            <div class="job-card">
+                <h3>UI/UX Дизайнер</h3>
+                <div class="job-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Москва</span>
+                    <span><i class="fas fa-briefcase"></i> Опыт от 2 лет</span>
+                </div>
+                <p>Разработка пользовательских интерфейсов для музыкальной платформы...</p>
+                <div class="job-type">В офисе</div>
+                <button class="auth-button" style="margin-top: 15px;">Подробнее</button>
+            </div>
+            <div class="job-card">
+                <h3>Администратор баз данных</h3>
+                <div class="job-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Москва</span>
+                    <span><i class="fas fa-briefcase"></i> Опыт от 4 лет</span>
+                </div>
+                <p>Разработка и администрирования баз данных...</p>
+                <div class="job-type">В офисе</div>
+                <button class="auth-button" style="margin-top: 15px;">Подробнее</button>
+            </div>
+            <div class="job-card">
+                <h3>Работник службы поддержки</h3>
+                <div class="job-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Москва</span>
+                    <span><i class="fas fa-briefcase"></i> Опыт не требуется</span>
+                </div>
+                <p>Разработка и администрирования баз данных...</p>
+                <div class="job-type">Удалённо</div>
+                <button class="auth-button" style="margin-top: 15px;">Подробнее</button>
+            </div>
+            <div class="job-card">
+                <h3>Работник службы поддержки</h3>
+                <div class="job-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Москва</span>
+                    <span><i class="fas fa-briefcase"></i> Опыт не требуется</span>
+                </div>
+                <p>Разработка и администрирования баз данных...</p>
+                <div class="job-type">В офисе</div>
+                <button class="auth-button" style="margin-top: 15px;">Подробнее</button>
+            </div>
+
+            <!-- Добавить другие вакансии -->
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-column">
+            <h4>MusicFlow</h4>
+            <a href="/about">О нас</a>
+            <a href="/vacancies">Вакансии</a>
+            <a href="/press">Для прессы</a>
+        </div>
+        <div class="footer-column">
+            <h4>Поддержка</h4>
+            <a href="/reference">Справка</a>
+            <a href="/contact">Контакты</a>
+        </div>
+        <div class="footer-column">
+            <h4>Правовая информация</h4>
+            <a href="/terms-of-use">Условия использования</a>
+            <a href="/confidentiality">Конфиденциальность</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Фильтрация вакансий
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
+</script>
+</body>
+</html>

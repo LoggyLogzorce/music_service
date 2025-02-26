@@ -1,0 +1,62 @@
+/* Основные стили из предыдущих страниц */
+:root {
+    --primary-color: #1db954;
+    --dark-bg: #121212;
+    --light-gray: #b3b3b3;
+    --card-bg: #181818;
+}
+
+/* Стили для справки */
+.help-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.search-help {
+    margin: 40px 0;
+}
+
+.faq-category {
+    margin: 40px 0;
+}
+
+.faq-item {
+    background: var(--card-bg);
+    border-radius: 10px;
+    margin: 15px 0;
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question:hover {
+    background: #202020;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding: 0 20px;
+    border-top: 1px solid #303030;
+}
+
+.faq-answer p {
+    padding: 20px 0;
+}
+
+.faq-icon {
+    color: var(--primary-color);
+    font-size: 20px;
+    transition: transform 0.3s;
+}
+
+.active .faq-icon {
+    transform: rotate(45deg);
+}

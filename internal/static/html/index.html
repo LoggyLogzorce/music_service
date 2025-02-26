@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicFlow | Главная</title>
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="/static/css/my_collection.css">
+    <link rel="stylesheet" href="/static/css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <i class="fas fa-music"></i>
+        MusicFlow
+    </div>
+    <nav>
+        <a href="/" class="active">Главная</a>
+        <a href="/podcasts">Подкасты</a>
+        <a href="/charts">Чарты</a>
+        <a href="/my-collection">Моя коллекция</a>
+    </nav>
+    <div class="auth-buttons">
+        <button onclick="location.href='/login'">Войти</button>
+        <button onclick="location.href='/register'">Зарегистрироваться</button>
+    </div>
+</header>
+
+<main>
+    <div class="search-bar">
+        <label>
+            <input type="text" placeholder="Ищите исполнителей, треки, подкасты...">
+        </label>
+        <i class="fas fa-search"></i>
+    </div>
+
+    <!-- Карусель с главными новостями -->
+    <div class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <img src="https://cdnn1.img.sputnik-ossetia.ru/img/07e4/0b/0e/11419319_0:219:1000:782_1920x0_80_0_0_df189c4dfa064e3d17d0d0cbc5c9cf0c.jpg.webp" alt="News 1">
+                <div class="carousel-caption">
+                    <h3>Новый альбом Miyagi & Andy Panda</h3>
+                    <p>Один из долгожданных альбомов уже в сети</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images8.alphacoders.com/566/thumb-1920-566873.jpg" alt="News 2">
+                <div class="carousel-caption">
+                    <h3>Концерт Imagine Dragons</h3>
+                    <p>Билеты уже в продаже</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://picsum.photos/1200/400" alt="News 3">
+                <div class="carousel-caption">
+                    <h3>Сингл Weeknd</h3>
+                    <p>Слушайте новый трек "Take My Breath"</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+        <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+    </div>
+
+    <div class="liked-songs-banner">
+        <div>
+            <h2>Понравившиеся треки</h2>
+            <p>23 трека • 1 ч 45 мин</p>
+        </div>
+    </div>
+
+    <h2 class="section-title">Новые релизы</h2>
+    <div class="albums-grid">
+        <!-- Повторить 6 раз -->
+        <div class="album-card">
+            <img src="https://picsum.photos/200" alt="Album Cover" class="album-cover">
+            <h3>Название альбома</h3>
+            <p>Исполнитель</p>
+        </div>
+        <div class="album-card">
+            <img src="https://picsum.photos/200" alt="Album Cover" class="album-cover">
+            <h3>Название альбома</h3>
+            <p>Исполнитель</p>
+        </div>
+        <div class="album-card">
+            <img src="https://picsum.photos/200" alt="Album Cover" class="album-cover">
+            <h3>Название альбома</h3>
+            <p>Исполнитель</p>
+        </div>
+        <div class="album-card">
+            <img src="https://picsum.photos/200" alt="Album Cover" class="album-cover">
+            <h3>Название альбома</h3>
+            <p>Исполнитель</p>
+        </div>
+        <div class="album-card">
+            <img src="https://picsum.photos/200" alt="Album Cover" class="album-cover">
+            <h3>Название альбома</h3>
+            <p>Исполнитель</p>
+        </div>
+    </div>
+
+    <h2 class="section-title">Рекомендуем вам</h2>
+    <div class="track-list">
+        <!-- Повторить 5 раз -->
+        <div class="track-item">
+            <img src="https://picsum.photos/40" alt="Track Cover">
+            <div>
+                <h4>Название трека</h4>
+                <p>Исполнитель</p>
+            </div>
+            <span style="margin-left: auto;">3:45</span>
+        </div>
+        <div class="track-item">
+            <img src="https://picsum.photos/40" alt="Track Cover">
+            <div>
+                <h4>Название трека</h4>
+                <p>Исполнитель</p>
+            </div>
+            <span style="margin-left: auto;">3:45</span>
+        </div>
+        <div class="track-item">
+            <img src="https://picsum.photos/40" alt="Track Cover">
+            <div>
+                <h4>Название трека</h4>
+                <p>Исполнитель</p>
+            </div>
+            <span style="margin-left: auto;">3:45</span>
+        </div>
+        <div class="track-item">
+            <img src="https://picsum.photos/40" alt="Track Cover">
+            <div>
+                <h4>Название трека</h4>
+                <p>Исполнитель</p>
+            </div>
+            <span style="margin-left: auto;">3:45</span>
+        </div>
+        <div class="track-item">
+            <img src="https://picsum.photos/40" alt="Track Cover">
+            <div>
+                <h4>Название трека</h4>
+                <p>Исполнитель</p>
+            </div>
+            <span style="margin-left: auto;">3:45</span>
+        </div>
+        <div class="track-item">
+            <img src="https://picsum.photos/40" alt="Track Cover">
+            <div>
+                <h4>Название трека</h4>
+                <p>Исполнитель</p>
+            </div>
+            <span style="margin-left: auto;">3:45</span>
+        </div>
+    </div>
+
+    <h2 class="section-title">Популярные плейлисты</h2>
+    <div class="playlists">
+        <!-- Повторить 6 раз -->
+        <div class="playlist-card">
+            <h4>Название плейлиста</h4>
+            <p>Описание</p>
+        </div>
+        <div class="playlist-card">
+            <h4>Название плейлиста</h4>
+            <p>Описание</p>
+        </div>
+        <div class="playlist-card">
+            <h4>Название плейлиста</h4>
+            <p>Описание</p>
+        </div>
+        <div class="playlist-card">
+            <h4>Название плейлиста</h4>
+            <p>Описание</p>
+        </div>
+        <div class="playlist-card">
+            <h4>Название плейлиста</h4>
+            <p>Описание</p>
+        </div>
+    </div>
+
+    <h3 class="section-title">Недавно прослушано</h3>
+    <div class="recently-played">
+        <div class="track-item">
+            <img src="https://picsum.photos/40" alt="Трек">
+            <div>
+                <h4>Bohemian Rhapsody</h4>
+                <p>Queen</p>
+            </div>
+            <span class="time">6:07</span>
+            <i class="fas fa-ellipsis-h"></i>
+        </div>
+        <div class="track-item">
+            <img src="https://picsum.photos/40" alt="Трек">
+            <div>
+                <h4>Bohemian Rhapsody</h4>
+                <p>Queen</p>
+            </div>
+            <span class="time">6:07</span>
+            <i class="fas fa-ellipsis-h"></i>
+        </div>
+        <div class="track-item">
+            <img src="https://picsum.photos/40" alt="Трек">
+            <div>
+                <h4>Bohemian Rhapsody</h4>
+                <p>Queen</p>
+            </div>
+            <span class="time">6:07</span>
+            <i class="fas fa-ellipsis-h"></i>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-column">
+            <h4>MusicFlow</h4>
+            <a href="/about">О нас</a>
+            <a href="/vacancies">Вакансии</a>
+            <a href="/press">Для прессы</a>
+        </div>
+        <div class="footer-column">
+            <h4>Поддержка</h4>
+            <a href="/reference">Справка</a>
+            <a href="/contact">Контакты</a>
+        </div>
+        <div class="footer-column">
+            <h4>Правовая информация</h4>
+            <a href="/terms-of-use">Условия использования</a>
+            <a href="/confidentiality">Конфиденциальность</a>
+        </div>
+    </div>
+</footer>
+
+<script src="/static/js/index.js"></script>
+</body>
+</html>

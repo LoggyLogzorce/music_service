@@ -1,0 +1,40 @@
+/* Общие стили */
+:root {
+    --primary-color: #1db954;
+    --dark-bg: #121212;
+    --light-gray: #b3b3b3;
+    --card-bg: #181818;
+}
+
+.legal-container {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.legal-section {
+    background: var(--card-bg);
+    padding: 25px;
+    border-radius: 10px;
+    margin: 25px 0;
+}
+
+.legal-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.legal-list {
+    padding-left: 20px;
+    margin: 15px 0;
+}
+
+.legal-list li {
+    margin: 10px 0;
+}
+
+.update-date {
+    text-align: right;
+    color: var(--light-gray);
+    font-size: 14px;
+}

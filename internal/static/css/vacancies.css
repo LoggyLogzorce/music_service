@@ -1,0 +1,66 @@
+/* Общие стили */
+:root {
+    --primary-color: #1db954;
+    --dark-bg: #121212;
+    --light-gray: #b3b3b3;
+    --card-bg: #181818;
+}
+
+.vacancies-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.job-filters {
+    display: flex;
+    gap: 15px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background: var(--card-bg);
+    border: 1px solid #404040;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.filter-btn.active {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.jobs-grid {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.job-card {
+    background: var(--card-bg);
+    padding: 25px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+}
+
+.job-meta {
+    display: flex;
+    gap: 15px;
+    margin: 15px 0;
+    color: var(--light-gray);
+    font-size: 14px;
+}
+
+.job-type {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 15px;
+    background: #2a2a2a;
+    font-size: 12px;
+}

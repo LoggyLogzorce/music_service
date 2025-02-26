@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicFlow | Регистрация</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="/static/css/register.css">
+    <link rel="stylesheet" href="/static/css/login.css">
+    <link rel="stylesheet" href="/static/css/footer.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <i class="fas fa-music"></i>
+        MusicFlow
+    </div>
+    <nav>
+        <a href="/">Главная</a>
+        <a href="/podcasts">Подкасты</a>
+        <a href="/charts">Чарты</a>
+    </nav>
+    <div class="auth-buttons">
+        <button onclick="location.href='/login'">Войти</button>
+    </div>
+</header>
+
+<main>
+    <div class="auth-container">
+        <h1 class="auth-title">Создайте аккаунт</h1>
+
+        <form class="auth-form">
+            <div class="input-group">
+                <input type="text" class="auth-input" placeholder="Имя пользователя" required>
+            </div>
+
+            <div class="input-group">
+                <input type="email" class="auth-input" placeholder="Email" required>
+            </div>
+
+            <div class="input-group">
+                <input type="password" class="auth-input" placeholder="Пароль" required>
+            </div>
+
+            <button type="submit" class="auth-button">Зарегистрироваться</button>
+        </form>
+
+        <div class="separator"></div>
+
+        <div class="social-auth">
+            <button class="social-button">
+                <i class="fab fa-google"></i>
+                Продолжить с Google
+            </button>
+            <button class="social-button">
+                <i class="fab fa-yandex"></i>
+                Продолжить с Ya ID
+            </button>
+            <button class="social-button">
+                <i class="fab fa-vk"></i>
+                Продолжить с VK ID
+            </button>
+        </div>
+
+        <div class="auth-links">
+            <span class="auth-link">Уже есть аккаунт? <a href="/login" style="color: var(--primary-color);">Войти</a></span>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-column">
+            <h4>MusicFlow</h4>
+            <a href="/about">О нас</a>
+            <a href="/vacancies">Вакансии</a>
+            <a href="/press">Для прессы</a>
+        </div>
+        <div class="footer-column">
+            <h4>Поддержка</h4>
+            <a href="/reference">Справка</a>
+            <a href="/contact">Контакты</a>
+        </div>
+        <div class="footer-column">
+            <h4>Правовая информация</h4>
+            <a href="/terms-of-use">Условия использования</a>
+            <a href="/confidentiality">Конфиденциальность</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
